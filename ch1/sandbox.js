@@ -41,7 +41,18 @@ abc((name)=>{
     console.log("name : "+name)
 })
 
+html = ``;
 
+let page= document.getElementById("yoyo");
+
+ar = ['lala','bobo','ichi'];
+
+ar.forEach((i)=> {
+ html+=`<li>${i}</li>`
+})
+
+
+page.innerHTML = html;
 
 speak()
 
