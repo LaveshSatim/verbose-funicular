@@ -7,27 +7,41 @@ let b = 20;
 //function declaration
 
 function sayHallo(name) {
-    alert("hello "+name);
+    alert("hello " + name);
+
+
 }
 
 sayHallo("lavesh");
 
-if(typeof a !== "string"){
-    console.log(a+ " is string");
+if (typeof a !== "string") {
+    console.log(a + " is string");
 }
 
 //function expression
-const speak = function(name="'not passed'") {
+const speak = function (name = "'not passed'") {
 
-    console.log("name : "+name);
+    console.log("name : " + name);
 
 };
 
 const play = (name) => {
 
-    console.log("play : "+name);
+    console.log("play : " + name);
 
 }
+
+
+let abc = (call) => {
+
+   call('lala');
+}
+
+abc((name)=>{
+    console.log("name : "+name)
+})
+
+
 
 speak()
 
