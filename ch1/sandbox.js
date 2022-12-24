@@ -34,21 +34,21 @@ const play = (name) => {
 
 let abc = (call) => {
 
-   call('lala');
+    call('lala');
 }
 
-abc((name)=>{
-    console.log("name : "+name)
+abc((name) => {
+    console.log("name : " + name)
 })
 
 html = ``;
 
-let page= document.getElementById("yoyo");
+let page = document.getElementById("yoyo");
 
-ar = ['lala','bobo','ichi'];
+ar = ['lala', 'bobo', 'ichi'];
 
-ar.forEach((i)=> {
- html+=`<li>${i}</li>`
+ar.forEach((i) => {
+    html += `<li>${i}</li>`
 })
 
 
@@ -57,3 +57,19 @@ page.innerHTML = html;
 speak()
 
 play("teju")
+
+
+let obj = {
+    name: "lavesh",
+    hobbies: ["programming", 'java', 'spring boot'],
+    age: 24,
+    clg: {
+        name: "git"
+    },
+    func:function(){
+        console.log("fdfdsfdsfsdfdf");
+    }
+}
+
+obj.func();
+console.log(obj)
